@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="{% static 'script.js' %}"></script>
+</head>
+<body>
+
+    <br>
+    <center>
+    <table class=" table table-striped container-fluid" width="60%" >
+        <tr>
+            <th>Name :</th>
+            <td>{{user.username}}</td>
+        </tr>
+        <tr>
+            <th>Photo :</th>
+            <td><img src="{{form.image.url}}" width="150px"></td>
+        </tr>
+        <tr>
+            <th>Age :</th>
+            <td> {{form.age}}</td>
+        </tr>
+        
+        <tr>
+            <th>Email :</th>
+            <td>{{form.email}}</td>
+        </tr>
+        <tr>
+            <th>Password :</th>
+            <td>{{form.password1}}</td>
+        </tr>
+        <!-- <tr colspan="2" style="align-items: center;">
+           <center> <th style="align-content: center;">Edit</th></center>
+        </tr> -->
+    </table>
+</center>
+</body>
+</html>
